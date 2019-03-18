@@ -4,7 +4,7 @@
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
 
 ### Usage:
-Pre-requisites: have python, docker, maven and a jdk installed
+Pre-requisites: have docker, and a jre installed
 
 1. clone this repo
 1. run ./mvnw clean package in project root
