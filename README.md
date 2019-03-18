@@ -11,12 +11,12 @@ Pre-requisites: have docker, and a jre installed
 1. run ./mvnw clean package in project root
 1. run docker build -t hack \.
 1. run docker run -d -p 8080:8080 hack
-  a. If 8080 is in use, map to an open port e.g. -p 8888:8080
+  a. If 8080 is in use, map to an open port e.g. -p 9080:8080
 1. once container comes online - verify by running in browser
 
 To begin testing RCE - run the exploit.py file. 
 
-1. python exploit.py http://myserver:8080/orders/3 "CMD" 
+1. python exploit.py http://localhost:8080/orders/3 "CMD" 
 
 Try with different CMDs like
 * pwd - where are we?
