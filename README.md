@@ -13,7 +13,8 @@ Pre-requisites: have docker, and a jre installed
 1. run docker run -d -p 8080:8080 hack    <---  If 8080 is in use, map to an open port e.g. -p 9080:8080
 1. once container comes online - verify by running in browser
 
-To begin testing RCE - run the exploit.py file. 
+To begin testing RCE - run the exploit.py file.
+    http://localhist:8080
 
 1. python exploit.py http://localhost:8080/orders/3 "CMD" 
 
