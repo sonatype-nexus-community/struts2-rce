@@ -5,34 +5,34 @@
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
 
 ### Usage:
-Pre-requisites: have docker, and a jre installed
+Pre-requisites: have Docker and a JRE installed, and Python if not on Mac
 
 1. fork this repo
-1. run ./mvnw clean package in project root
-1. run docker build -t hack \.
-1. run docker run -d -p 9080:8080 hack
+1. run `./mvnw clean package` in project root
+1. run `docker build -t hack \.`
+1. run `docker run -d -p 9080:8080 hack`
 1. once container comes online - verify by running in browser http://localhost:9080
 
 To begin testing RCE - run the exploit.py file.
 
-1. python exploit.py http://localhost:9080/orders/3 "CMD" 
+1. `python exploit.py http://localhost:9080/orders/3 "CMD"` or if on a Mac you can run `./dist/exploit http://localhost:9080/orders/3 "CMD"`
 
 Try with different CMDs like
-* pwd - where are we?
-* whomai - what user are we running this?
-* ls -la - what's in my directory?
-* ls / - what's my machine
-* ls /etc - what else we can find?
+* `pwd` - where are we?
+* `whomai` - what user are we running this?
+* `ls -la` - what's in my directory?
+* `ls /` - what's my machine
+* `ls /etc` - what else we can find?
 
 ## How to Fix!
 Use the Nexus Lifecycle Component Information Panel to identify a non-vulnerable version of struts2-core. 
-Update the POM to that version and rebuild.You can also rebuild the docker image and run it to retry the attack.
+Update the POM to that version and rebuild. You can also rebuild the Docker image and run it to retry the attack.
 
 Also, look in the Issues here to see DepShield findings
 
 
-### Original readme
-===========================================================================
+## Original readme
+
 README.txt - Rest Showcase Webapp
 
 Rest Showcase is a simple example of REST app build with the REST plugin.
