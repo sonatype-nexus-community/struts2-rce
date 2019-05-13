@@ -35,21 +35,21 @@
     <description>Struts 2 Rest Showcase Example</description>
 
     <distributionManagement>
-       <snapshotRepository>
-    <id>nexus</id>
-    <url>http://18.188.100.16:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-     <repository>
-    <id>nexus</id>
-    <url>http://18.188.100.16:8081/repository/maven-releases/</url>
-    </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>http://18.188.100.16:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus</id>
+            <url>http://18.188.100.16:8081/repository/maven-releases/</url>
+        </repository>
     </distributionManagement>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-rest-plugin</artifactId>
-	</dependency>
+	    </dependency>
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-convention-plugin</artifactId>
@@ -59,10 +59,10 @@
             <artifactId>struts2-config-browser-plugin</artifactId>
         </dependency>
         <dependency>
-        <groupId>com.lowagie</groupId>
-        <artifactId>itext</artifactId>
-        <version>4.2.2</version>
-    </dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>4.2.2</version>
+        </dependency>
 
         <!-- Logging -->
         <dependency>
