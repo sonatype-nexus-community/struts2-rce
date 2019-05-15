@@ -23,9 +23,9 @@ node () {
       // Run the maven build
       try{
         if (isUnix()) {
-           sh "./mvnw  -B -Dmaven.test.failure.ignore -Drat.skip=true -f pom.xml clean package -U"
+           sh "./mvnw  -B -Dmaven.test.failure.ignore clean package"
         } else {
-           bat(/mvnw.cmd -B -Dmaven.test.failure.ignore -Drat.skip=true clean package/)
+           bat("mvnw.cmd -B -Dmaven.test.failure.ignore clean package")
         }
         
         currentBuild.result = 'SUCCESS'
