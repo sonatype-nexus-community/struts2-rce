@@ -5,13 +5,19 @@
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
 
 ### Usage:
-Pre-requisites: have Docker and a JDK installed, and eventually Python (can be replaced by [Jython](https://www.jython.org/))
+Pre-requisites:
+1. have a JDK installed,
+1. ideally have Docker installed,
+1. eventually have Python installed (can be replaced by [Jython](https://www.jython.org/))
 
+To prepare:
 1. clone this repo
 1. run `./mvnw clean package` in project root
 1. run `docker build -t hack \.`
 1. run `docker run -d -p 9080:8080 hack`
 1. once container comes online - verify by running in browser http://localhost:9080
+
+Notice: if you don't have Docker installed, you can run `./mvnw jetty:run`
 
 To begin testing RCE - run the `exploit.py` file:
 * run `python exploit.py http://localhost:9080/orders/3 "CMD"`
