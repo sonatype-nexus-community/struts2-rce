@@ -7,3 +7,4 @@
 .classpath
 .DS_Store
 /target/
+*.jar

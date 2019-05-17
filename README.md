@@ -5,17 +5,18 @@
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
 
 ### Usage:
-Pre-requisites: have Docker and a JRE installed, and Python if not on Mac
+Pre-requisites: have Docker and a JDK installed, and eventually Python (can be replaced by [Jython](https://www.jython.org/))
 
-1. fork this repo
+1. clone this repo
 1. run `./mvnw clean package` in project root
 1. run `docker build -t hack \.`
 1. run `docker run -d -p 9080:8080 hack`
 1. once container comes online - verify by running in browser http://localhost:9080
 
-To begin testing RCE - run the exploit.py file.
-
-1. `python exploit.py http://localhost:9080/orders/3 "CMD"` or if on a Mac you can run `./dist/exploit http://localhost:9080/orders/3 "CMD"`
+To begin testing RCE - run the `exploit.py` file:
+* run `python exploit.py http://localhost:9080/orders/3 "CMD"`
+* If you don't have Python, download [Jython Standalone](https://www.jython.org/downloads.html) and\
+  run `java -jar jython*.jar exploit.py http://localhost:9080/orders/3 "CMD"`
 
 Try with different CMDs like
 * `pwd` - where are we?
@@ -25,10 +26,10 @@ Try with different CMDs like
 * `ls /etc` - what else we can find?
 
 ## How to Fix!
-Use the Nexus Lifecycle Component Information Panel to identify a non-vulnerable version of struts2-core. 
+Use the Nexus Lifecycle [Component Information Panel](https://help.sonatype.com/iqserver/reporting/application-composition-report/resolving-security-issues) to identify a non-vulnerable version of struts2-core. 
 Update the POM to that version and rebuild. You can also rebuild the Docker image and run it to retry the attack.
 
-Also, look in the Issues here to see DepShield findings
+Also, look in the Issues here to see [DepShield](https://www.sonatype.com/depshield) findings
 
 
 ## Original readme
