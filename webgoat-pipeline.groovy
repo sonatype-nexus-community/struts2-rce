@@ -109,7 +109,7 @@ pipeline
     }
     post ('Promotion') {
         always {
-            moveComponents destination: 'maven-dev', nexusInstanceId: 'nxrm3', tagName: 'passed-dev-scan'
+            moveComponents destination: 'maven-dev', nexusInstanceId: 'nxrm3', tagName: 'passed-dev-scan', repository: 'maven-releases'
             echo 'Successfully promoted component'
         }
     }
