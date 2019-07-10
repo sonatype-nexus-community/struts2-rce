@@ -4,6 +4,10 @@
 
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
 
+A realistic scenario where a reference project for a framework is deployed on a container but with terrible consequences. To familiarise yourself look at the code and compile it. Also investigate the dockerfile - does anything specific rise to get our attention?
+
+Shows how easily every day decisions and multiple vulnerabilities in chain can be leveraged.
+
 ### Usage:
 Pre-requisites:
 1. have a JDK installed,
