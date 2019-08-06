@@ -25,7 +25,7 @@ Notice: if you don't have Docker installed, you can run `./mvnw jetty:run`
 
 To begin testing RCE - run the `exploit.py` file:
 * run `python exploit.py http://localhost:9080/orders/3 "CMD"`
-* If you don't have Python, download [Jython Standalone](https://www.jython.org/downloads.html) and\
+* If you don't have Python, use the [Jython Standalone](https://www.jython.org/downloads.html) and\
   run `java -jar jython*.jar exploit.py http://localhost:9080/orders/3 "CMD"`
 
 Try with different CMDs like
