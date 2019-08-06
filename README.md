@@ -17,8 +17,8 @@ Pre-requisites:
 To prepare:
 1. clone this repo
 1. run `./mvnw clean package` in project root
-1. run `docker build -t hack \.`
-1. run `docker run -d -p 9080:8080 hack`
+1. run `docker build -t hackme \.`
+1. run `docker run -d -p 9080:8080 hackme`
 1. once container comes online - verify by running in browser http://localhost:9080
 
 Notice: if you don't have Docker installed, you can run `./mvnw jetty:run`
