@@ -11,8 +11,8 @@ Shows how easily every day decisions and multiple vulnerabilities in chain can b
 ### Usage:
 Pre-requisites:
 1. have a JDK installed,
-1. ideally have Docker installed,
-1. eventually have Python installed (can be replaced by [Jython](https://www.jython.org/))
+1. have Docker installed, Docker Desktop for Mac or Win
+1. ideally have Python installed (can be replaced by [Jython](https://www.jython.org/))
 
 To prepare:
 1. clone this repo
