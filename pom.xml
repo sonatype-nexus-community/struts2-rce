@@ -63,6 +63,18 @@
             <artifactId>itext</artifactId>
             <version>4.2.2</version>
         </dependency>
+	    
+	<!-- Hygiene -->
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>7.31.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.extensions</groupId>
+            <artifactId>spring-security-saml2-core</artifactId>
+            <version>1.0.9.RELEASE</version>
+        </dependency>    
 
         <!-- Logging -->
         <dependency>
