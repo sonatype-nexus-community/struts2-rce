@@ -66,14 +66,14 @@
 	    
 	<!-- Hygiene -->
         <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-core</artifactId>
-            <version>7.31.0.Final</version>
+            <groupId>org.richfaces</groupId>
+            <artifactId>richfaces-core</artifactId>
+            <version>4.5.17.Final</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.security.extensions</groupId>
-            <artifactId>spring-security-saml2-core</artifactId>
-            <version>1.0.9.RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-gradle-plugin</artifactId>
+            <version>2.2.4.RELEASE</version>
         </dependency>    
 
         <!-- Logging -->
