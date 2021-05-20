@@ -125,7 +125,7 @@
     <build>
         <finalName>struts2-rest-showcase</finalName>
         <plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.sonatype.ossindex.maven</groupId>
 				<artifactId>ossindex-maven-plugin</artifactId>
 				<executions>
@@ -137,7 +137,7 @@
 					</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>

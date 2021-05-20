@@ -17,9 +17,8 @@ ARG IQ_SERVER
 ARG IQ_STAGE
 
 COPY --from=ahab /tmp/ahab /tmp/
-RUN chmod +x /tmp/ahab \
-#    && dpkg-query --show --showformat='${Package} ${Version}\n' | /tmp/ahab iq --iq-server-url $IQ_SERVER --iq-username $IQ_USER --iq-token $IQ_TOKEN --iq-application 'struts2-rce-github-flo-docker'
-    && dpkg-query --show --showformat='${Package} ${Version}\n' | /tmp/ahab chase
+#RUN chmod +x /tmp/ahab \
+#	&& dpkg-query --show --showformat='${Package} ${Version}\n' | /tmp/ahab chase
 
 RUN set -ex \
 	&& rm -rf /usr/local/tomcat/webapps/* \
