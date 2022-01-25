@@ -6,7 +6,7 @@ RUN apk add --no-cache curl
 WORKDIR /tmp/ahab
 RUN curl -o ahab -O -L https://github.com/sonatype-nexus-community/ahab/releases/download/v0.2.5/ahab-linux.amd64-v0.2.5
 
-FROM tomcat
+FROM tomcat:7
 LABEL nexus_scan="true"
 RUN apt-get update && apt-get install -y ca-certificates && apt-get upgrade -y
 
