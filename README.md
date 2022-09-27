@@ -1,5 +1,7 @@
 [![DepShield Badge](https://depshield.sonatype.org/badges/sonatype-nexus-community/struts2-rce/depshield.svg)](https://depshield.github.io)
 
+[![Snyk Container](https://github.com/sealmindset/struts2-rce/actions/workflows/snyk-container.yml/badge.svg)](https://github.com/sealmindset/struts2-rce/actions/workflows/snyk-container.yml)
+
 ## Exploit Demo for CVE-2017-5638
 
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
