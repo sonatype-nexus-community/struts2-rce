@@ -14,6 +14,9 @@
 name: Snyk Container
 
 on:
+  release:
+    types: [created]
+  workflow_dispatch: # Put here!!
   push:
     branches: [ "main" ]
   pull_request:
