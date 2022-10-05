@@ -1,5 +1,6 @@
 name: Build
 on:
+  workflow_dispatch:
   push:
     branches:
       - master # or the name of your main branch
