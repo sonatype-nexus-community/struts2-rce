@@ -1,11 +1,4 @@
 # Sonatype Nexus Ahab Evaluation
-FROM alpine as ahab
-LABEL stage=AHAB
-
-RUN apk add --no-cache curl
-WORKDIR /tmp/ahab
-RUN curl -o ahab -O -L https://github.com/sonatype-nexus-community/ahab/releases/download/v0.2.5/ahab-linux.amd64-v0.2.5
-
 FROM tomcat:7.0.84-jre8
 LABEL nexus_scan="true"
 RUN apt-get update && apt-get install -y ca-certificates && apt-get upgrade -y
