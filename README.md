@@ -1,6 +1,6 @@
 [![DepShield Badge](https://depshield.sonatype.org/badges/sonatype-nexus-community/struts2-rce/depshield.svg)](https://depshield.github.io)
 
-## Exploit Demo for CVE-2017-5638
+## Exploit Demo for CVE-2017-5638 (Struts2 RCE and CVE-2022-44228 (Log4Shell)
 
 Completely based on https://github.com/piesecurity/apache-struts2-CVE-2017-5638
 
@@ -23,10 +23,13 @@ To prepare:
 
 Notice: if you don't have Docker installed, you can run `./mvnw jetty:run`
 
-To begin testing RCE - run the `exploit.py` file:
+To begin testing Struts2 RCE - run the `exploit.py` file:
 * run `python exploit.py http://localhost:9080/orders/3 "CMD"`
 * If you don't have Python, use the [Jython Standalone](https://www.jython.org/downloads.html) and\
   run `java -jar jython*.jar exploit.py http://localhost:9080/orders/3 "CMD"`
+  
+To begin testing Log4Shell Live - open the web applicaiton
+Insert known Log4shell strings into text fields and observe the logs in the container. You'll see interesting deets :-)
 
 Try with different CMDs like
 * `pwd` - where are we?
