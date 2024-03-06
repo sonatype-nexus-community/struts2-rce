@@ -91,27 +91,23 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>net.sourceforge.jwebunit</groupId>
             <artifactId>jwebunit-core</artifactId>
             <version>1.4.1</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>net.sourceforge.jwebunit</groupId>
             <artifactId>jwebunit-htmlunit-plugin</artifactId>
             <version>1.4.1</version>
-            <scope>test</scope>
             <exclusions>
                 <exclusion>
                     <groupId>xom</groupId>
