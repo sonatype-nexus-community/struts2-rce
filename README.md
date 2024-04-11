@@ -39,11 +39,8 @@ Try with different CMDs like
 * `ls /etc` - what else we can find?
 
 ## How to Fix!
-Use the Nexus Lifecycle [Component Information Panel](https://help.sonatype.com/iqserver/reporting/application-composition-report/resolving-security-issues) to identify a non-vulnerable version of struts2-core. 
+Use the Nexus Lifecycle [Component Information Panel]([https://help.sonatype.com/iqserver/reporting/application-composition-report/resolving-security-issues](https://help.sonatype.com/en/component-information-panel.html)) to identify a non-vulnerable version of struts2-core. 
 Update the POM to that version and rebuild. You can also rebuild the Docker image and run it to retry the attack.
-
-Also, look in the Issues here to see [DepShield](https://www.sonatype.com/depshield) findings
-
 
 ## Original readme
 
